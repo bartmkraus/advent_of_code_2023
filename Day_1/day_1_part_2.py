@@ -10,7 +10,7 @@ str_to_int = {
     "eight": "e8t",
     "nine": "n9e",
 }
-with open("day_1_p2.txt") as t:
+with open("data_p2.txt") as t:
     content = t.read()
     for digit in str_to_int.keys():
         content = content.replace(digit, str(str_to_int[digit]))
