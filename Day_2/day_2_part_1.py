@@ -11,8 +11,9 @@ def is_valid_game(cubes):
 
 
 games = []
+file_path = "feed.txt"
 
-with open("data_p1.txt") as file:
+with open(file_path) as file:
     for line in file:
         line = line.replace(":", "").replace(",", "").replace(";", "")
         line_parts = line.split()

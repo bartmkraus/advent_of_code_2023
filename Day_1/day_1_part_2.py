@@ -10,7 +10,8 @@ str_to_int = {
     "eight": "e8t",
     "nine": "n9e",
 }
-with open("data_p2.txt") as t:
+file_path = "feed.txt"
+with open(file_path) as t:
     content = t.read()
     for digit in str_to_int.keys():
         content = content.replace(digit, str(str_to_int[digit]))

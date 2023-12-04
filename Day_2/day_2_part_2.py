@@ -18,9 +18,9 @@ def the_power_of_a_set_of_cubes(cube_counts):
 
 
 result = 0
+file_path = "feed.txt"
 
-
-with open("data_p2.txt") as file:
+with open(file_path) as file:
     for line in file:
         game = clean_data(line)
         cube_counts = fewest_number_of_cubes_of_each_color(game)

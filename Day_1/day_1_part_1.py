@@ -1,5 +1,6 @@
 result = 0
-with open("data_p1.txt") as t:
+file_path = "feed.txt"
+with open(file_path) as t:
     for line in t:
         parts = []
         for char in line:
